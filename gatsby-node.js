@@ -27,7 +27,7 @@ exports.createPages = ( {graphql, actions}) => {
         }
     `).then(results => {
         if(results.errors){
-            throw result.erros
+            throw results.erros
         }
         const Posts = results.data.allWordpressPost.edges
         Posts.forEach(post => {

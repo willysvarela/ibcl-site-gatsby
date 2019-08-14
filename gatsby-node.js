@@ -5,3 +5,39 @@
  */
 
 // You can delete this file if you're not using it
+const path = require('path');
+const { createFilePath } = require('gatsby-source-filesystem')
+
+exports.createPages = ( {graphql, actions}) => {
+    const {createPage} = actions
+    const PostTemplate = path.resolve('./src/templates/Post.js')
+
+    return graphql(`
+        {
+            allWordpressPost{
+                edges{
+                    node{
+                        slug
+                        wordpress_id
+                        title
+                        description
+                    }
+                }
+            }
+        }
+    `).then(results => {
+        if(results.errors){
+            throw result.erros
+        }
+        const Posts = results.data.allWordpressPost.edges
+        Posts.forEach(post => {
+            createPage({
+                path: `/post/${post.node.slug}`,
+                component: PostTemplate,
+                context: {
+                    id: post.node.wordpress_id
+                }
+            })
+        })
+    });
+}

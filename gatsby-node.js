@@ -20,7 +20,7 @@ exports.createPages = ( {graphql, actions}) => {
                         slug
                         wordpress_id
                         title
-                        description
+                        content
                     }
                 }
             }

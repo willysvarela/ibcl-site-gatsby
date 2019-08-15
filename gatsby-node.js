@@ -18,9 +18,7 @@ exports.createPages = ( {graphql, actions}) => {
                 edges{
                     node{
                         slug
-                        wordpress_id
-                        title
-                        content
+                        wordpress_id                        
                     }
                 }
             }

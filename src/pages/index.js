@@ -1,29 +1,31 @@
 import React from "react"
 import { Link } from "gatsby"
-import bulmaCarousel from 'bulma-carousel/';
-import Layout from "../components/layout"
+import { Hero, Container, Heading } from 'react-bulma-components'
+import Layout from "../components/layout" 
 import SEO from "../components/seo"
-
+import './styles.scss'
 
 const IndexPage = () => {
   return (
     <Layout>
       <SEO title="Home" />
-      <section class="carousel hero is-medium has-carousel">
-        <div id="carousel-demo" class="hero-carousel">
-          <div class="item-1" style={{ backgroundColor: '#000' }}>
-          </div>
-          <div class="item-2" style={{ backgroundColor: '#333' }}>
-          </div>
-          <div class="item-3" style={{ backgroundColor: '#222' }}>
-          </div>
-        </div>
-        <div class="hero-head"></div>
-        <div class="hero-body"></div>
-        <div class="hero-foot"></div>
-      </section>
+      <Hero size="fullheight" color="primary">
+        <Hero.Head renderAs="header">
+          <div className="bd-notification is-info"></div>
+        </Hero.Head>
+        <Hero.Body>
+          <Container className="align-center has-text-centered">
+            <Heading title size={1}>Muito Mais que Amigos</Heading>
+            <Heading subtitle size={4} style={{maxWidth: '60%', margin: 'auto'}}>
+              Uma igreja onde todos podem ser transformados pelo amor de Jesus Cristo
+            </Heading>
+          </Container>
+        </Hero.Body>
+        <Hero.Footer>
+          <div className="bd-notification is-danger">V</div>
+        </Hero.Footer>
+      </Hero>
     </Layout>
   )
 }
-
 export default IndexPage

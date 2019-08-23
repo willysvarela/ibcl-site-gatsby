@@ -29,30 +29,34 @@ const IndexPage = () => {
         <h1>test</h1>
         <Columns>
           <Columns.Column>
-            <Box paddingless>
-              <Container>
-                <img className="box_img" src="http://m23v9ttw6p-flywheel.netdna-ssl.com/wp-content/themes/goodnews-v1/images/gallery/worship/worship-15-800x425.jpg" />
-                <div className="box_body">
-                  <span className="box_title">Serviços</span>
-                  <span className="box_bar"></span>
-                  <span className="box_description">The best place to start connecting with God at Good News is in our Services.</span>
-                  <a className="box_link">Horários -></a>
-                </div>
-              </Container>
-            </Box>
+            <a className="box_divlink">
+              <Box paddingless>
+                <Container>
+                  <img className="box_img" src="http://m23v9ttw6p-flywheel.netdna-ssl.com/wp-content/themes/goodnews-v1/images/gallery/worship/worship-15-800x425.jpg" />
+                  <div className="box_body">
+                    <span className="box_title">Serviços</span>
+                    <span className="box_bar"></span>
+                    <span className="box_description">The best place to start connecting with God at Good News is in our Services.</span>
+                    <a className="box_link">Horários -></a>
+                  </div>
+                </Container>
+              </Box>
+            </a>
           </Columns.Column>
           <Columns.Column>
-            <Box paddingless>
-              <Container>
-                <img className="box_img" src="http://m23v9ttw6p-flywheel.netdna-ssl.com/wp-content/themes/goodnews-v1/images/gallery/worship/worship-15-800x425.jpg" />
-                <div className="box_body">
-                  <span className="box_title">Serviços</span>
-                  <span className="box_bar"></span>
-                  <span className="box_description is-small ">The best place to start connecting with God at Good News is in our Services.</span>
-                  <a className="box_link">Horários -></a>
-                </div>
-              </Container>
-            </Box>
+            <a className="box_divlink">
+              <Box paddingless>
+                <Container>
+                  <img className="box_img" src="http://m23v9ttw6p-flywheel.netdna-ssl.com/wp-content/themes/goodnews-v1/images/gallery/worship/worship-15-800x425.jpg" />
+                  <div className="box_body">
+                    <span className="box_title">Serviços</span>
+                    <span className="box_bar"></span>
+                    <span className="box_description is-small ">The best place to start connecting with God at Good News is in our Services.</span>
+                    <a className="box_link">Horários -></a>
+                  </div>
+                </Container>
+              </Box>
+            </a>
           </Columns.Column>
           <Columns.Column>
             <a className="box_divlink">
@@ -70,19 +74,24 @@ const IndexPage = () => {
             </a>
           </Columns.Column>
           <Columns.Column>
-            <Box paddingless>
-              <Container>
-                <img className="box_img" src="http://m23v9ttw6p-flywheel.netdna-ssl.com/wp-content/themes/goodnews-v1/images/gallery/worship/worship-15-800x425.jpg" />
-                <div className="box_body">
-                  <span className="box_title">Serviços</span>
-                  <span className="box_bar"></span>
-                  <span className="box_description">The best place to start connecting with God at Good News is in our Services.</span>
-                  <a className="box_link">Horários -></a>
-                </div>
-              </Container>
-            </Box>
+            <a className="box_divlink">
+              <Box paddingless>
+                <Container>
+                  <img className="box_img" src="http://m23v9ttw6p-flywheel.netdna-ssl.com/wp-content/themes/goodnews-v1/images/gallery/worship/worship-15-800x425.jpg" />
+                  <div className="box_body">
+                    <span className="box_title">Serviços</span>
+                    <span className="box_bar"></span>
+                    <span className="box_description">The best place to start connecting with God at Good News is in our Services.</span>
+                    <a className="box_link">Horários -></a>
+                  </div>
+                </Container>
+              </Box>
+            </a>
           </Columns.Column>
         </Columns>
+      </Container>
+      <Container className="is-fullhd" style={{ height: '500px' }}>
+        <iframe src="https://www.google.com/maps/embed?pb=" width={window.innerWidth} height={500} frameborder="0" allowfullscreen></iframe>
       </Container>
     </Layout>
   )

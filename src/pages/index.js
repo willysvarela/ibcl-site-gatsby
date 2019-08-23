@@ -13,7 +13,7 @@ const IndexPage = () => {
         <Hero.Head renderAs="header">
           <div className="bd-notification is-info"></div>
         </Hero.Head>
-        <Hero.Body>
+        <Hero.Body>          
           <Container className="align-center has-text-centered">
             <Heading title size={1}>Muito Mais que Amigos</Heading>
             <Heading subtitle size={4} style={{ maxWidth: '60%', margin: 'auto' }}>
@@ -26,7 +26,6 @@ const IndexPage = () => {
         </Hero.Footer>
       </Hero>
       <Container>
-        <h1>test</h1>
         <Columns>
           <Columns.Column>
             <a className="box_divlink">
@@ -36,8 +35,7 @@ const IndexPage = () => {
                   <div className="box_body">
                     <span className="box_title">Serviços</span>
                     <span className="box_bar"></span>
-                    <span className="box_description">The best place to start connecting with God at Good News is in our Services.</span>
-                    <a className="box_link">Horários -></a>
+                    <span className="box_description">The best place to start connecting with God at Good News is in our Services.</span> 
                   </div>
                 </Container>
               </Box>
@@ -51,8 +49,7 @@ const IndexPage = () => {
                   <div className="box_body">
                     <span className="box_title">Serviços</span>
                     <span className="box_bar"></span>
-                    <span className="box_description is-small ">The best place to start connecting with God at Good News is in our Services.</span>
-                    <a className="box_link">Horários -></a>
+                    <span className="box_description is-small ">The best place to start connecting with God at Good News is in our Services.</span> 
                   </div>
                 </Container>
               </Box>
@@ -66,8 +63,7 @@ const IndexPage = () => {
                   <div className="box_body">
                     <span className="box_title">Serviços</span>
                     <span className="box_bar"></span>
-                    <span className="box_description">The best place to start connecting with God at Good News is in our Services.</span>
-                    <a className="box_link">Horários -></a>
+                    <span className="box_description">The best place to start connecting with God at Good News is in our Services.</span> 
                   </div>
                 </Container>
               </Box>
@@ -81,14 +77,16 @@ const IndexPage = () => {
                   <div className="box_body">
                     <span className="box_title">Serviços</span>
                     <span className="box_bar"></span>
-                    <span className="box_description">The best place to start connecting with God at Good News is in our Services.</span>
-                    <a className="box_link">Horários -></a>
+                    <span className="box_description">The best place to start connecting with God at Good News is in our Services.</span> 
                   </div>
                 </Container>
               </Box>
             </a>
           </Columns.Column>
         </Columns>
+      </Container>
+      <Container>
+
       </Container>
       <Container className="is-fullhd" style={{ height: '500px' }}>
         <iframe src="https://www.google.com/maps/embed?pb=" width={window.innerWidth} height={500} frameborder="0" allowfullscreen></iframe>

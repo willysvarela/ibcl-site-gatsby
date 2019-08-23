@@ -6,12 +6,19 @@ $colors: $primary-color, $secondary-color, $third-color, $fourth-color;
   background-color: $primary-color;
 }
 
+.container {
+  margin-top: 50px;
+}
+
 .columns .column {
   .box {
     transition: 0.2s;
   }
   @for $i from 1 through 4 {
     &:nth-child(#{$i}) {
+      .box_divlink .box .container .box_bar {
+        background-color: nth($colors, $i);
+      }
       .box_divlink .box:hover {
         background-color: nth($colors, $i);
         .container .box_bar {
@@ -50,7 +57,7 @@ $colors: $primary-color, $secondary-color, $third-color, $fourth-color;
     }
 
     .box_bar {
-      background-color: $primary-color;
+      //background-color na linha 19, no loop.
       height: 5px;
       margin-top: 1px;
       margin-bottom: 2px;

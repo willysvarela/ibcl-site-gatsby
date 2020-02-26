@@ -1,0 +1,32 @@
+.eventslist {
+  border: 1px solid #e0e0e0;
+  height: 100%;
+  padding: 20px;
+
+  .event_item {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    margin-top: 10px;
+    .event_date {
+      display: flex;
+      flex-direction: column;
+      padding: 10px 20px;
+      border-radius: 10px;
+      background: #404040;
+      color: white;
+      margin-right: 10px;
+      .event_day {
+        font-size: 1.2em;
+      }
+      .event_month {
+        font-size: 0.7em;
+      }
+    }
+  }
+
+  .seeall_link {
+    font-size: 0.7em;
+  }
+}

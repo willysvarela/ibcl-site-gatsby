@@ -1,9 +1,13 @@
 import React from "react"
 import { Link } from "gatsby"
-import { Hero, Container, Heading, Box, Columns } from 'react-bulma-components'
+import { Hero, Container, Heading, Box, Columns } from "react-bulma-components"
 import Layout from "../components/layout"
+import Card from "../components/Card"
+import EventBlock from "../components/EventBlock"
+import EventsList from "../components/EventsList"
+
 import SEO from "../components/seo"
-import './styles.scss'
+import "./styles.scss"
 
 const IndexPage = () => {
   return (
@@ -13,11 +17,18 @@ const IndexPage = () => {
         <Hero.Head renderAs="header">
           <div className="bd-notification is-info"></div>
         </Hero.Head>
-        <Hero.Body>          
+        <Hero.Body>
           <Container className="align-center has-text-centered">
-            <Heading title size={1}>Muito Mais que Amigos</Heading>
-            <Heading subtitle size={4} style={{ maxWidth: '60%', margin: 'auto' }}>
-              Uma igreja onde todos podem ser transformados pelo amor de Jesus Cristo
+            <Heading title size={1}>
+              Muito Mais que Amigos
+            </Heading>
+            <Heading
+              subtitle
+              size={4}
+              style={{ maxWidth: "60%", margin: "auto" }}
+            >
+              Uma igreja onde todos podem ser transformados pelo amor de Jesus
+              Cristo
             </Heading>
           </Container>
         </Hero.Body>
@@ -28,68 +39,76 @@ const IndexPage = () => {
       <Container>
         <Columns>
           <Columns.Column>
-            <a className="box_divlink">
-              <Box paddingless>
-                <Container>
-                  <img className="box_img" src="http://m23v9ttw6p-flywheel.netdna-ssl.com/wp-content/themes/goodnews-v1/images/gallery/worship/worship-15-800x425.jpg" />
-                  <div className="box_body">
-                    <span className="box_title">Serviços</span>
-                    <span className="box_bar"></span>
-                    <span className="box_description">The best place to start connecting with God at Good News is in our Services.</span> 
-                  </div>
-                </Container>
-              </Box>
-            </a>
+            <Card
+              to="/sobre"
+              title="Serviços"
+              description="Teste de Descrição"
+            />
           </Columns.Column>
           <Columns.Column>
-            <a className="box_divlink">
-              <Box paddingless>
-                <Container>
-                  <img className="box_img" src="http://m23v9ttw6p-flywheel.netdna-ssl.com/wp-content/themes/goodnews-v1/images/gallery/worship/worship-15-800x425.jpg" />
-                  <div className="box_body">
-                    <span className="box_title">Serviços</span>
-                    <span className="box_bar"></span>
-                    <span className="box_description is-small ">The best place to start connecting with God at Good News is in our Services.</span> 
-                  </div>
-                </Container>
-              </Box>
-            </a>
+            <Card
+              to="/servicos"
+              title="Serviços"
+              description="Teste de Descrição"
+            />
           </Columns.Column>
           <Columns.Column>
-            <a className="box_divlink">
-              <Box paddingless>
-                <Container>
-                  <img className="box_img" src="http://m23v9ttw6p-flywheel.netdna-ssl.com/wp-content/themes/goodnews-v1/images/gallery/worship/worship-15-800x425.jpg" />
-                  <div className="box_body">
-                    <span className="box_title">Serviços</span>
-                    <span className="box_bar"></span>
-                    <span className="box_description">The best place to start connecting with God at Good News is in our Services.</span> 
-                  </div>
-                </Container>
-              </Box>
-            </a>
+            <Card
+              to="/departamentos"
+              title="Serviços"
+              description="Teste de Descrição"
+            />
           </Columns.Column>
           <Columns.Column>
-            <a className="box_divlink">
-              <Box paddingless>
-                <Container>
-                  <img className="box_img" src="http://m23v9ttw6p-flywheel.netdna-ssl.com/wp-content/themes/goodnews-v1/images/gallery/worship/worship-15-800x425.jpg" />
-                  <div className="box_body">
-                    <span className="box_title">Serviços</span>
-                    <span className="box_bar"></span>
-                    <span className="box_description">The best place to start connecting with God at Good News is in our Services.</span> 
-                  </div>
-                </Container>
-              </Box>
-            </a>
+            <Card
+              to="/contato"
+              title="Serviços"
+              description="Teste de Descrição"
+            />
           </Columns.Column>
         </Columns>
       </Container>
       <Container>
-
+        <div>
+          <Heading title size={1}>
+            Eventos
+          </Heading>
+          <Columns>
+            <Columns.Column>
+              <EventBlock
+                title="Noite Havaiana"
+                description="Uma noite especial em que os casais daIBCL poderão ouvir sobre Comunicação no Casamento."
+                date="28 de Fevereiro de 2020"
+              />
+            </Columns.Column>
+            <Columns.Column>
+              <EventBlock
+                title="Noite Havaiana"
+                description="Uma noite especial em que os casais daIBCL poderão ouvir sobre Comunicação no Casamento."
+                date="28 de Fevereiro de 2020"
+              />
+            </Columns.Column>
+            <Columns.Column>
+              <EventBlock
+                title="Noite Havaiana"
+                description="Uma noite especial em que os casais daIBCL poderão ouvir sobre Comunicação no Casamento."
+                date="28 de Fevereiro de 2020"
+              />
+            </Columns.Column>
+            <Columns.Column>
+              <EventsList />
+            </Columns.Column>
+          </Columns>
+        </div>
       </Container>
-      <Container className="is-fullhd" style={{ height: '500px' }}>
-        <iframe src="https://www.google.com/maps/embed?pb=" width={window.innerWidth} height={500} frameborder="0" allowfullscreen></iframe>
+      <Container className="is-fullhd" style={{ height: "500px" }}>
+        <iframe
+          src="https://www.google.com/maps/embed?pb="
+          width={window.innerWidth}
+          height={500}
+          frameborder="0"
+          allowfullscreen
+        ></iframe>
       </Container>
     </Layout>
   )

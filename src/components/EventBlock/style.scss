@@ -1,0 +1,27 @@
+.event_div {
+  display: flex;
+  flex-direction: column;
+  background: "#000";
+  text-align: center;
+  margin: 10px;
+  .event_img {
+    background: rgb(11, 184, 126);
+    min-height: 100px;
+  }
+  .event_body {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    text-align: left;
+    background: #fff;
+    .event_title {
+      font-size: 1.5em;
+    }
+    .event_date {
+      font-weight: lighter;
+    }
+    .event_description {
+      font-size: 0.7em;
+    }
+  }
+}

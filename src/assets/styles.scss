@@ -1,13 +1,17 @@
 @charset "utf-8";
 
-$title-color: #332946;
 $primary-color: #00b8a9;
 $secondary-color: #f6416c;
 $third-color: #f58b29;
 $fourth-color: #8ec23f;
 $navbar-background-color: rgba(255, 255, 255, 0);
 
+/*
+$title-color: #332946;
+
 //own style
 $small-font-size: 0.9em;
+
+$colors: $primary-color, $secondary-color, $third-color, $fourth-color;*/
 
 @import "~bulma/bulma.sass";

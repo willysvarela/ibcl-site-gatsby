@@ -1,5 +1,5 @@
 import React from "react"
-import { Button } from "react-bulma-components"
+
 import PropTypes from "prop-types"
 import "./style.scss"
 
@@ -14,7 +14,7 @@ const EventBlock = props => {
         <span className="event_date">{props.date}</span>
         <span className="event_description">{props.description}</span>
         <br />
-        <Button>Saiba Mais</Button>
+        <a className="button">Saiba Mais</a>
       </div>
     </div>
   )

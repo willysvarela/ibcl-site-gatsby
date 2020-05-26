@@ -1,11 +1,5 @@
 @import "../assets/styles.scss";
 
-$colors: $primary-color, $secondary-color, $third-color, $fourth-color;
-
 .banner {
   background-color: $primary-color;
-}
-
-.container {
-  margin-top: 50px;
 }
